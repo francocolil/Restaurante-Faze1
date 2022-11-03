@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset=”UTF-8″ />
+    <title>Registro Cliente</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<style>
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: Helvetica;
+    background: #424242;
+}
+
+.menu{
+    text-align: center;
+    list-style:none;
+    padding: 0;
+    background: #C8E6C9;
+    width:100%;
+    max-width: 3000px;
+    margin: auto;
+  }
+  .menu li a{
+    text-decoration: none;
+    color:#616161;
+    padding:20px;
+    display: block;
+  }
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  .menu li a:hover{
+    background:white;
+  }
+
+h1{
+    color: #fff;
+    text-align: center;
+}
+
+form .form-register{
+    width: 95%;
+    max-width: 500px;
+    margin:auto;
+    background: #C8E6C9;
+    border-radius: 10px;
+}
+
+.form__titulo{
+    color: white;
+    padding: 1px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-radius:5px;
+}
+
+.contenedor-inputs{
+
+  background-color: transparent;
+  border:1px solid gray;
+  border-radius:5px;
+  padding:17px;
+  width: 350px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+.input-50{
+    width: 100%;
+}
+
+.input-100{
+    width: 150%;
+}
+
+.btn-enviar{
+    background: #424242;
+    color: #F5F5F5;
+    margin: auto;
+    padding: 15px 100px;
+}
+
+.form__link{
+    width: 100%;
+    margin: 0;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+a{
+    width: 100%;
+    margin: 0;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color:#F5F5F5;
+}
+
+
+
+</style>
+<body>
+    <ul class="menu">
+        <li class=""><a href="Index.html">Inicio</a</li>
+        <li class=""><a href="#">Nuestra Historia</a</li>
+        <li class=""><a href="#">Carta</a</li>
+        <li class=""><a href="Login.html">Sesion Cliente</a</li>
+        <li class=""><a href="LoginEmpresa.html">Sesion Empresa</a</li>
+        <li class=""><a href="#">Acerca de</a></li>  
+    </ul>
+    <h1>Registro de Cuenta</h1>
+    <form action="Registro.php" method="post" class="form-register">
+        
+        <div class="contenedor-inputs">
+          <h2 class="form__titulo">Crear Cuenta</h2>
+            <div class="NombreRegistro"><input type="text" name="nombre" id="nombre" placeholder="Nombre"  required></div>
+            <div class="ApellidoRegistro"><input type="text" name="apellido" id="apellido" placeholder="Apellido"  required></div>
+            <div class="RutCliente"><input type="text" name="rut" id="rut" placeholder="rut"  required></div>
+            <div class="EmailRegistro"><input type="email" name="correo" id="correo" placeholder="Correo"  required></div>
+            <div class="ClaveRegistro"><input type="password" name="clave" id="clave" placeholder="Clave"  required></div>
+            <div class="TelefonoRegistro"><input type="text" name="telefono" id="telefono" placeholder="Telefono"  required></div>
+            <input type="submit" value="Registrar" class="btn-enviar">
+            <p class="form__link">Si ya tienes cuenta <a href="Login.html">Ingresa aqui</a></p>                   
+        </div> 
+    </form>
+ </body>
+</html>

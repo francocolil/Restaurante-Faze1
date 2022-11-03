@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset=UTF-8 />
+    <title>Login</title>
+    <link rel="stylesheet" href="inicio-cliente.css">
+</style>
+<meta name="description" content="Esta pagina te servira para resgistrarte y reservar una mesa en este retaurante" />
+<meta name="robots" content="index, follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="inicio-cliente.css">
+<title>Iniciar Sesion</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: Helvetica;
+    background: #424242;
+}
+
+.menu{
+    text-align: center;
+    list-style:none;
+    padding: 0;
+    background: #C8E6C9;
+    width:100%;
+    max-width: 3000px;
+    margin: auto;
+  }
+  .menu li a{
+    text-decoration: none;
+    color:#616161;
+    padding:20px;
+    display: block;
+  }
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  .menu li a:hover{
+    background:white;
+  }
+
+h1{
+    color: #fff;
+    text-align: center;
+}
+
+form .form-register{
+    width: 95%;
+    max-width: 500px;
+    margin:auto;
+    background: #C8E6C9;
+    border-radius: 10px;
+}
+
+form.form__titulo{
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.contenedor-inputs{
+    background-color: transparent;
+  border:1px solid gray;
+  border-radius:5px;
+  padding:17px;
+  width: 340px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background: #C8E6C9;
+}
+input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+.input-50{
+    width: 100%;
+}
+
+.input-100{
+    width: 150%;
+}
+
+.btn-enviar{
+    background: #424242;
+    color: #F5F5F5;
+    margin: auto;
+    padding: 15px 100px;
+}
+
+.form__link{
+    width: 100%;
+    margin: 0;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 15px;
+}
+.inicio{
+background-color: transparent;
+  border:1px solid gray;
+  border-radius:5px;
+  padding:17px;
+  width: 340px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+    color: black;
+}
+</style>
+<body>
+    <ul class="menu">
+        <li class=""><a href="Index.html">Inicio</a</li>
+        <li class=""><a href="#">Nuestra Historia</a</li>
+        <li class=""><a href="#">Carta</a</li>
+        <li class=""><a href="Login.html">Sesion Cliente</a</li>
+        <li class=""><a href="LoginEmpresa.html">Sesion Empresa</a</li>
+        <li class=""><a href="#">Acerca de</a></li>  
+    </ul>
+    <div class=contenedor-inputs>
+        <h1>Inicio Sesion</h1>
+        <form action="Validar.php" method="post" class="form-Inicio">
+            <div class="username">
+                <input type="email" name="correo" placeholder="Correo"  class="input-50" maxlength="50" required>
+            </div>
+            <div class="username">
+                <input type="password" name="clave" placeholder="Contraseña" maxlength="50" required>
+            </div>
+            <div class="recordar">¿Olvido su contraseña?</div>
+            <input type="submit" value="Iniciar Sesion">
+            <div class="registrarse">
+                <a href="RegistroUsuario.html">Registrarse</a>
+            </div>
+        </form>
+    </div>      
+</body>
+</html>

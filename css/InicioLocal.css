@@ -1,0 +1,60 @@
+
+h1{
+  text-align:center;
+  color:#E0E0E0;
+  width: 100%;
+}  
+p{
+  text-align: center;
+  color: #EEEEEE;
+}
+body{
+  font-family: arial, helverica;
+  background: #424242;
+}
+.menu{
+  text-align: center;
+  list-style:none;
+  padding: 0;
+  background: #C8E6C9;
+  width:100%;
+  max-width: 3000px;
+  margin: auto;
+}
+  .menu li a{
+    text-decoration: none;
+    color:#424242;
+    padding:20px;
+    display: block;
+  }
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  .menu li a:hover{
+    background:white;
+  }
+
+div.galeria{
+  margin:10px 20px;
+  float: left;
+  width:400px;
+}
+
+  div.galeria img{
+    width:100%;
+    height: auto;
+  }
+
+  div.galeria:hover{
+    transform: rotate(-3deg);
+  }
+
+  div.pie{
+    text-align:center;
+    padding: 10px;
+  }
+
+  .pie p{
+    color: #E0E0E0;
+  }
